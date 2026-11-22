@@ -1,0 +1,51 @@
+{
+  "summary": "3 of 5 sampled events had contract violations. 1 planned event names were absent from the sample.",
+  "metrics": {
+    "Samples": 5,
+    "Failing samples": 3,
+    "Violations": 5,
+    "Unobserved event names": 1
+  },
+  "rows": [
+    {
+      "Sample": 3,
+      "Event": "asset_exported",
+      "Property": "format",
+      "Finding": "Missing property",
+      "Expected": "string",
+      "Observed": "absent"
+    },
+    {
+      "Sample": 3,
+      "Event": "asset_exported",
+      "Property": "duration_ms",
+      "Finding": "Wrong type",
+      "Expected": "number",
+      "Observed": "string"
+    },
+    {
+      "Sample": 3,
+      "Event": "asset_exported",
+      "Property": "compressed",
+      "Finding": "Wrong type",
+      "Expected": "boolean",
+      "Observed": "string"
+    },
+    {
+      "Sample": 4,
+      "Event": "project_created",
+      "Property": "member_count",
+      "Finding": "Wrong type",
+      "Expected": "integer",
+      "Observed": "boolean"
+    },
+    {
+      "Sample": 5,
+      "Event": "asset_downloaded",
+      "Property": "(event)",
+      "Finding": "Unplanned event",
+      "Expected": "Defined event name",
+      "Observed": "asset_downloaded"
+    }
+  ]
+}

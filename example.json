@@ -1,0 +1,65 @@
+{
+  "plan": {
+    "project_created": {
+      "project_id": {
+        "type": "string"
+      },
+      "member_count": {
+        "type": "integer"
+      }
+    },
+    "asset_exported": {
+      "format": {
+        "type": "string"
+      },
+      "duration_ms": {
+        "type": "number"
+      },
+      "compressed": {
+        "type": "boolean",
+        "required": false
+      }
+    },
+    "trial_ended": {
+      "days": {
+        "type": "integer"
+      }
+    }
+  },
+  "events": [
+    {
+      "name": "project_created",
+      "properties": {
+        "project_id": "demo-1",
+        "member_count": 1
+      }
+    },
+    {
+      "name": "asset_exported",
+      "properties": {
+        "format": "svg",
+        "duration_ms": 124.7
+      }
+    },
+    {
+      "name": "asset_exported",
+      "properties": {
+        "duration_ms": "157",
+        "compressed": "false"
+      }
+    },
+    {
+      "name": "project_created",
+      "properties": {
+        "project_id": "demo-2",
+        "member_count": true
+      }
+    },
+    {
+      "name": "asset_downloaded",
+      "properties": {
+        "format": "pdf"
+      }
+    }
+  ]
+}

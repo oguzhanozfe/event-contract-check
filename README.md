@@ -2,6 +2,8 @@
 
 Check sample analytics events against a tracking plan and locate missing or mistyped properties.
 
+**[Open the live demo](https://oguzhanozfe.github.io/event-contract-check/)** · [Browser features and setup](demo/DEMO.md)
+
 ![Event Contract Check showing the included example in the browser](docs/preview.png)
 
 [Deploy to Render](https://render.com/deploy?repo=https://github.com/oguzhanozfe/event-contract-check) · [Example input](example.json) · [Computed report](docs/example-report.json) · [Model settings](#connect-a-model)

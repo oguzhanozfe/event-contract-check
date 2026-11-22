@@ -1,0 +1,15 @@
+{
+  "model": "gemma-4-e4b-it",
+  "text": "Row 1 · Since the 'format' property was observed as 'absent', what process needs checking to ensure this required string field is present for asset_exported events?",
+  "row": 1,
+  "record": {
+    "Sample": 3,
+    "Event": "asset_exported",
+    "Property": "format",
+    "Finding": "Missing property",
+    "Expected": "string",
+    "Observed": "absent"
+  },
+  "source_sha256": "9a0e4e13df10b8d24cd6c624b71abdc2eb2793d984f7db47c17a569b427b64b4",
+  "report_sha256": "f4606212df5e61676f7d39579c497124c64e9cdc9591fa163ad370f38178daa0"
+}
